@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bungee+Tint&display=swap');
+
+
+body{
+    background-color: antiquewhite;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.parentComponent{
+    padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainHeading{
+    text-align: center;
+    font-family: "Bungee Tint", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.addTask {
+    font-family: "Baskervville SC", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: transform 1s ease;  /* for transition to end smoothly you have to use transition property in its original state also*/
+
 }
 
-.App-link {
-  color: #61dafb;
+.addTask:hover {
+    transform: scale(1.15);
+    transition: transform 1s ease;  /*this transition property applies only when we hover mouse over button*/
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.enterTitle {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px black solid;
+    transition: outline 100ms ease;
 }
+
+.enterTitle:focus{
+    outline: 3px solid rgb(0, 145, 255);    
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px; /* Adds space between items */
+    width: 100%; /* Ensure enough space for the items */
+}
+
+

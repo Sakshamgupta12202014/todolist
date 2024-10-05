@@ -1,0 +1,31 @@
+.tasks{
+    width: 200px;
+    background-color: rgb(213, 203, 219);
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+}
+
+.removedTasks {
+    display: none;
+}
+
+.tasks .buttonSection .removeButton{
+    margin: 10px;
+    color: black;
+    background-color: rgb(238, 105, 105);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 400ms ease;
+
+
+}
+
+.tasks .buttonSection .removeButton:hover{
+    transform: scale(1.15);
+}
+
+
